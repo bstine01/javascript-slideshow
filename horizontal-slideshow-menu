@@ -1,0 +1,176 @@
+x = 0;
+
+function panRight()
+{
+x = x+1;
+
+element=document.getElementById('thumbnail')
+paragraph=document.getElementById('caption')
+heading=document.getElementById('heading')
+
+if (x==1)
+    {
+    banknow();
+    panning();
+    }
+else if (x==2)
+    {
+    redtape();
+    panning();
+    }
+else if (x==3)
+    {
+    disposableEarth();
+    endRight();
+    }
+else
+    {
+    dinotracks();
+    endRight();
+    }
+}
+function panLeft()
+{
+    x = x-1;    
+
+if (x==1)
+    {
+    banknow();
+    panning();
+    }
+else if (x==2)
+    {
+    redtape();
+    panning();
+    }
+else if (x==3)
+    {
+    disposableEarth();
+    endLeft();
+    }
+else
+    {
+    dinotracks();
+    endLeft();
+    }
+}
+
+function banknow()
+    {
+element.innerHTML="<a href='banknow/index.html'><img src='assets/images/banknow_thumb.jpg' width='200' height='246' alt='Image of the Bank Now website home page.'></a>";
+heading.innerHTML="Bank Now (Site Mockup) - Created Using HTML5 and CSS 3";
+paragraph.innerHTML="A bank comparison web site. The consistant theme throughout the site is created with HTML and CSS. This seven page site features how CSS can create a stylized navigation.";
+    }
+function redtape()
+    {
+element.innerHTML="<a href='redtape/index.html'><img src='assets/images/redtape_thumb.jpg' width='200' height='246' alt='Image of the Red Tape website home page.'></a>";
+heading.innerHTML="Cut the Red Tape (Site Mockup) - Created Using Dreamweaver";
+paragraph.innerHTML="This five page web site is a directory web site focused on providing contact information of schools, municipalities, agencies, and government officials. This site was solely created using Adobe Dreamweaver.";
+    }
+function disposableEarth()
+    {
+element.innerHTML="<a href='disposable_earth/'><img src='assets/images/disposable_earth_thumb.jpg' width='200' height='246' alt='Image of the Disposable Earth website home page.'></a>";
+heading.innerHTML="Volunteer Resource (Site Mockup) - Created Using XHTML & CSS3";
+paragraph.innerHTML="A volunteer resource site for local organization, tips for &ldquo;going green&rdquo;, and a personal blog about reducing my carbon footprint. It includes a contact form created using Adobe Dreamweaver.";
+    }
+function dinotracks()
+    {
+element.innerHTML="<a href='dinotracks/index.html'><img src='assets/images/dinotracks_thumb.jpg' width='200' height='246' alt='Image of the Dino Tracks website home page.'></a>";
+heading.innerHTML="Dino Tracks (Site Mockup)- Created Using XHTML and CSS 2";
+paragraph.innerHTML="An online encyclopedia of dinosaur facts. This site features navigation using button images with rollover effects created with CSS. It also has is a working contact form using PHP.";
+    }
+function endLeft()
+{
+    disappear = document.getElementById('leftArrow');
+    disappear.style.display = "none" ;
+    appear = document.getElementById('rightArrow');
+    appear.style.display = "block" ;
+}
+function endRight()
+{
+    disappear = document.getElementById('rightArrow');
+    disappear.style.display = "none" ;
+    appear = document.getElementById('leftArrow');
+    appear.style.display = "block" ;
+}
+function panning()
+{
+    disappear = document.getElementById('rightArrow');
+    disappear.style.display = "block" ;
+    appear = document.getElementById('leftArrow');
+    appear.style.display = "block" ;
+}
+
+//Flash Section
+
+y = 0;
+
+function panRightFlash()
+{
+y = y+1;
+
+elementFlash=document.getElementById('thumbnailFlash')
+paragraphFlash=document.getElementById('captionFlash')
+headingFlash=document.getElementById('headingFlash')
+
+if (y==1)
+    {
+    alien();
+    endRightFlash();
+    }
+else
+    {
+    balloons();
+    endLeftFlash();
+    }
+}
+
+function panLeftFlash()
+{
+    y = y-1;    
+
+if (y==0)
+    {
+    balloons();
+    endLeftFlash();
+    }
+else
+    {
+    alien();
+    endRightFlash();
+    }
+}
+
+function alien()
+    {
+elementFlash.innerHTML="<a href='assets/swf/alien.swf'><img src='assets/images/alien_thumb.jpg' width='200' height='246' alt='Image of alien and space ship.'></a>";
+headingFlash.innerHTML="Aliens Visiting Earth!";
+paragraphFlash.innerHTML="Flash animation using various tweens (classic, motion, and shape).";
+    }
+function balloons()
+    {
+elementFlash.innerHTML="<a href='assets/swf/balloons.swf'><img src='assets/images/balloons_thumb.jpg' width='200' height='246' alt='Image of the Red Tape website home page.'></a>";
+headingFlash.innerHTML="Balloons On Broadway";
+paragraphFlash.innerHTML="Flash animation using various tweens (classic, motion, and shape). Also using the bone tool and masking. Used actionScript for stop animation.";
+    }
+function endLeftFlash()
+{
+    disappearFlash = document.getElementById('leftArrowFlash');
+    disappearFlash.style.display = "none" ;
+    appearFlash = document.getElementById('rightArrowFlash');
+    appearFlash.style.display = "block" ;
+}
+function endRightFlash()
+{
+    disappearFlash = document.getElementById('rightArrowFlash');
+    disappearFlash.style.display = "none" ;
+    appearFlash = document.getElementById('leftArrowFlash');
+    appearFlash.style.display = "block" ;
+}
+function panningFlash()
+{
+    disappearFlash = document.getElementById('rightArrowFlash');
+    disappearFlash.style.display = "block" ;
+    appearFlash = document.getElementById('leftArrowFlash');
+    appearFlash.style.display = "block" ;
+}
